@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+}
+
+h1,
+h3 {
+  padding: 5px;
+  color: darkmagenta;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 10px;
+  background-color: darkmagenta;
+  border-radius: 4px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: rgb(65, 1, 65);
+}
+
+.active {
+  background-color: rgb(65, 1, 65);
+}
+
+section {
+  width: 624px;
+  margin: 5px auto;
+}
+
+#ui {
+  height: 400px;
+  list-style-type: none;
+  overflow: scroll;
+}
+
+.messages {
+  background-color: rgb(197, 139, 252);
+  color: purple;
+  margin: 10px;
+  border-radius: 0 10px 10px 10px;
+  padding: 15px;
+  margin-right: 30%;
+}
+
+.right {
+  margin-left: 30%;
+  margin-right: 10px;
+  border-radius: 10px 0 10px 10px;
+  background-color: rgb(214, 139, 232);
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(65, 1, 65);
+  cursor: pointer;
+}
+
+form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 400px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: sans-serif;
+  vertical-align: middle;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px purple solid;
+}
+
+input:focus,
+textarea:focus,
+.btn:focus {
+  outline-width: 0;
+}
+
+textarea {
+  vertical-align: middle;
+  resize: none;
+}
+
+textarea::placeholder {
+  line-height: 25px;
+}
+
+.username {
+  color: purple;
+  font-weight: bold;
+}
+
+.message {
+  color: purple;
+}
+
+.date {
+  color: dimgray;
+  padding: 5px;
+}
+
+#show-username {
+  font-size: 20px;
+  padding: 10px;
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  left: 5px;
+  background-color: #fff;
+  border: 2px solid rgb(65, 1, 65);
+  color: rgb(65, 1, 65);
+  border-radius: 0 15px 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.trash {
+  width: 20px;
+  height: 20px;
+  margin-left: 360px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 2px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  section {
+    background-color: #333;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+
+  .form-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input,
+  textarea {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  textarea::placeholder {
+    line-height: 45px;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  #show-username {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+  }
+
+  .trash {
+    margin-left: 130px;
+  }
+}
